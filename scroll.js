@@ -1,7 +1,7 @@
 
 $('.responsive').slick({
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    prevArrow: $('.videoprev'),
+    nextArrow: $('.videonext'),
   infinite: false,
   speed: 300,
   slidesToShow: 8,

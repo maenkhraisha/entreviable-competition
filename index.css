@@ -1,23 +1,18 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.header-container {
-    background-color: gray;
-}
 
-.header-logo > img{
-    width: 100px;
-}
-
-.header-logo {
-    width: 20px;
-}
 
 /* slider styling */
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -27,7 +22,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -49,8 +45,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -85,7 +82,8 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -96,18 +94,185 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }
+
 /* the end of styling slider */
+
+/* header styling */
+.header-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background-color: #e8e8ea;
+}
+.header-icons-conatiner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.header-icons-conatiner >div{
+  margin: 0 1rem;
+}
+.red-rounded-div {
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 10px;
+ 
+  padding: 0.25rem;
+}
+.header-icons-inside>div{
+  margin: 0 0.1rem ;  
+  padding: 0.25rem;
+}
+.like-button {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.5rem; 
+  border-radius: 5px;
+}
+.like-button > i{
+  margin-left: 0.25rem;
+}
+.header-logo>img {
+  width: 100px;
+  margin: 0 2rem;
+}
+
+.header-links {
+  margin: 0 2rem;
+  display: flex;
+}
+.header-links >P {
+  margin: 0 0.1rem;
+}
+
+/* frequanty questions */
+.freq-questions-container {
+  padding: 1rem 4rem;
+  background-color: #aac5d0;
+}
+
+.freq-questions-container>h2 {
+  text-align: center;
+}
+
+.freq-questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.freq-questions>div>p {
+  font-weight: 800;
+  font-size: large;
+
+
+}
+
+.freq-questions>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 3rem;
+  padding: 0.5rem;
+  border-left: 5px solid #96a5ac;
+  border-bottom: 1px solid #96a5ac;
+}
+/* metaverse */
+.metaverse-journy{
+background-image: url("./assests/images/metaverse.jpg");
+background-size:     cover;                     
+background-repeat:   no-repeat;
+background-position: center center; 
+
+height: 90vh;
+}
+/* section five */
+.section-five-container::before {
+  content: "";
+  background-image: url("./assests/images/worldmap.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.09;
+}
+
+.section-five-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem 4rem;
+  position: relative;
+}
+
+.section-five-container>div>div>i {
+  position: relative;
+  left: -25px;
+  top: 1px;
+}
+
+.section-five-container>div>div>input {
+  padding: 0.25rem;
+  background-color: #d4e1e7;
+  border-radius: 2rem;
+  border: none;
+}
+
+.section-five-icons {
+  display: flex;
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+.section-five-icons>span {
+  background-color: black;
+  opacity: 1;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.section-five-icons>span>i {
+  color: white;
+}
 
 
 /* footer */
-.footer-log{
-width: 100px;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.footer>p {
+  margin: 0.5rem;
+}
+
+.footer-log {
+  width: 100px;
 }

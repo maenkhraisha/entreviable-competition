@@ -137,11 +137,15 @@ img {
   margin: 0 1rem;
 }
 .red-rounded-div {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: inline-block;
   border: 1px solid red;
-  border-radius: 10px;
- 
-  padding: 0.25rem;
+  border-radius: 10px; 
+  
 }
 .header-icons-inside>div{
   margin: 0 0.1rem ;  
@@ -382,3 +386,49 @@ padding: 2rem 4rem;
 .footer-log {
   width: 100px;
 }
+
+/* video scrol */
+
+
+
+.imgscroll {
+  z-index: 15;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+/* Custom Arrow */
+.prev {
+  z-index: 15;
+  color: #999;
+  position: absolute;
+  top: 38%;
+  left: -2em;
+  font-size: 1.5em;
+}
+.prev :hover {
+  cursor: pointer;
+  color: black;
+}
+
+.next {
+  z-index: 15;
+  color: #999;
+  position: absolute;
+  top: 38%;
+  right: -2em;
+  font-size: 1.5em;
+}
+.next :hover {
+  cursor: pointer;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .next {
+    display: none !important;
+  }
+}
+
+/* Demo Styles */
